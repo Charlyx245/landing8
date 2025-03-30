@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casino GANAMOS</title>
+  <link rel="icon" href="./Casino_ganamos/favicon-removebg.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      background-color: black;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin: 5rem 0 2rem 0;
+    }
+
+    .logo img {
+      width: 20rem;
+    }
+
+    .main-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-title p {
+      margin: 0;
+      font-size: 40px;
+      color: #00fffb;
+      text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 20px #FF0099, 0 0 40px #FF0099;
+    }
+
+    .whatsapp {
+      margin: 3rem 0 1rem 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .whatsapp-input {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      font-size: 18px;
+      color: #00FFFF;
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00FFFF;
+      border-radius: 8px;
+      outline: none;
+      text-align: center;
+      box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .whatsapp-input:focus {
+      box-shadow: 0 0 60px #00FFFF, 0 0 70px #00FFFF, 0 0 90px #0088FF;
+      border-color: #0088FF;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #00FFFF;
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00FFFF;
+      border-radius: 8px;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .button img {
+      margin-left: 10px;
+      height: 24px;
+      filter: invert(48%) sepia(98%) saturate(2955%) hue-rotate(111deg) brightness(107%) contrast(105%);
+    }
+
+    .button:hover {
+      background: #00FFFF;
+      color: #000;
+      box-shadow: 0 0 10px #00FFFF, 0 0 20px #0088FF, 0 0 40px #0044FF;
+    }
+
+    .button:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 5px #00FFFF, 0 0 10px #0088FF;
+    }
+
+    .img_wpp {
+      padding-left: 10px;
+      text-align: center;
+      width: 30px;
+      filter: invert(48%) sepia(98%) saturate(2955%) hue-rotate(111deg) brightness(107%) contrast(105%);
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .info p {
+      font-size: 20px;
+    }
+
+    .info h3 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 5%;
+    }
+
+    footer img {
+      margin: 0 10px;
+      height: 50px;
+    }
+
+    /* Mobile */
+    @media screen and (max-width: 768px) {
+      .logo img {
+        width: 15rem;
+      }
+
+      .main-title p {
+        font-size: 30px;
+      }
+
+      .whatsapp-input {
+        max-width: 80%;
+      }
+
+      .button {
+        min-width: 120px;
+        height: 60px;
+        font-size: 20px;
+      }
+
+      .info p {
+        font-size: 25px;
+      }
+
+      .info h3 {
+        font-size: 24px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+
+      footer img {
+        margin: 10px 0;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="./Casino_ganamos/logo ganamos.png" alt="Casino_ganamos">
+  </div>
+
+  <div class="main-title">
+    <p>¡CREA TU USUARIO por WhatsApp!</p>
+    <p>Escribe tu nombre</p>
+  </div>
+
+  <div class="whatsapp">
+    <input type="text" id="usernameInput" class="whatsapp-input" placeholder="Nombre">
+  </div>
+
+  <div class="whatsapp">
+    <button class="button" id="whatsappButton">
+      CREAR USUARIO 
+      <img class="img_wpp" src="./Casino_ganamos/whatsapp-64.png" alt="Whatsapp">
+    </button>
+  </div>
+
+  <div class="info">
+    <p>Carga mínima: $3000</p>
+    <h3>
+      RULETA EN VIVO | +1000 SLOTS <br>
+      APUESTAS DEPORTIVAS <br>
+      Y MUCHA DIVERSIÓN
+    </h3>
+  </div>
+
+  <footer>
+    <p>Cajero Oficial de </p>
+    <img src="./Casino_ganamos/logo ganamos.png" alt="Logo Casino Ganamos">
+    <img src="./Casino_ganamos/+18d-removebg-preview.png" alt="18+">
+  </footer>
+
+  <script>
+    document.getElementById("whatsappButton").addEventListener("click", function() {
+      var username = document.getElementById("usernameInput").value.trim();
+      var telefono = "3517040939";
+      var mensaje = "Hola! Quiero crear un usuario. Mi *nombre* es: " + username;
+      var link = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+
+      let clickCount = localStorage.getItem("clickCount") || 0;
+      clickCount++;
+      localStorage.setItem("clickCount", clickCount);
+      console.log("Número de clics en 'CREAR USUARIO':", clickCount);
+
+      window.open(link, '_blank');
+    });
+  </script>
+</body>
+</html>
